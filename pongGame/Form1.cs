@@ -174,6 +174,8 @@ namespace pongGame
                 {
                     if (player1.IntersectsWith(ball))
                     {
+                        musicPlayer = new SoundPlayer(Properties.Resources.beep);
+                        musicPlayer.Play();
                         ballXSpeed *= -1;
                         ball.X = player1.X + ball.Width;
                         playerTurn++;
@@ -183,6 +185,8 @@ namespace pongGame
                 {
                     if (player2.IntersectsWith(ball))
                     {
+                        musicPlayer = new SoundPlayer(Properties.Resources.beep);
+                        musicPlayer.Play();
                         ballXSpeed *= -1;
                         ball.X = player2.X + ball.Width;
                         playerTurn++;
@@ -202,7 +206,7 @@ namespace pongGame
                     ball.Y = 195;
 
                     player1.Y = 210;
-                    player1.X = 10;
+                    player1.X = 10; 
                     player2.Y = 130;
                     player2.X = 10;
                 }

@@ -195,8 +195,8 @@ namespace pongGame
                 int temp = playerTurn % 2;
                 if (temp != 0)
                 {
-                    player2Score++;
-                    p2ScoreLabel.Text = $"{player2Score}";
+                    player1Score++;
+                    p1ScoreLabel.Text = $"{player1Score}";
 
                     ball.X = 295;
                     ball.Y = 195;
@@ -208,8 +208,8 @@ namespace pongGame
                 }
                 else
                 {
-                    player1Score++;
-                    p1ScoreLabel.Text = $"{player1Score}";
+                    player2Score++;
+                    p2ScoreLabel.Text = $"{player2Score}";
 
                     ball.X = 295;
                     ball.Y = 195;
